@@ -3,6 +3,8 @@
     package="kr.sjsoft.qrcodeexample">
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera.any" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.QRCodeExample">
-        <activity android:name=".MobileVisionScanQR"></activity>
+        <activity android:name=".GalleryScanQR"></activity>
+        <activity android:name=".MLKitScanQR" />
         <activity android:name=".ZXingCreateQR" />
         <activity android:name=".ZXingScanQR" />
         <activity android:name=".MainActivity">

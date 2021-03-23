@@ -23,7 +23,7 @@ public class ZXingCreateQR extends AppCompatActivity {
 
         imageView = (ImageView) findViewById(R.id.QRImage);
         textView = (TextView) findViewById(R.id.QRtext);
-        textView.setText("Data: BSJ");
+        textView.setText("Hello, QR Code Example!");
 
         MultiFormatWriter multiFormatWriter = new MultiFormatWriter();
         try{

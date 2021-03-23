@@ -1,6 +1,5 @@
 package kr.sjsoft.qrcodeexample;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -26,7 +25,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickScanQRBtn2(View v) {
-        Intent intent = new Intent(this, MobileVisionScanQR.class);
+        Intent intent = new Intent(this, MLKitScanQR.class);
+        startActivity(intent);
+    }
+
+    public void onClickScanQRBtn3(View v) {
+        Intent intent = new Intent(this, GalleryScanQR.class);
         startActivity(intent);
     }
 }

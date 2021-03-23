@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <Button
+        android:textAllCaps="false"
         android:id="@+id/CreateQRBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,16 +16,26 @@
         android:text="QR코드 생성" />
 
     <Button
+        android:textAllCaps="false"
         android:id="@+id/ScanQRBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onClickScanQRBtn"
-        android:text="QR 스캔하기 (ZXing)" />
+        android:text="QR 스캔하기 (ZXing, Zebra Crossing)" />
 
     <Button
+        android:textAllCaps="false"
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onClickScanQRBtn2"
-        android:text="QR 스캔하기 (Mobile Vision)" />
+        android:text="QR 스캔하기 (ML Kit, Machine Learning Kit)" />
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickScanQRBtn3"
+        android:text="QR스캔하기(갤러이 이미지, ZXing, ML Kit)" />
 </LinearLayout>
